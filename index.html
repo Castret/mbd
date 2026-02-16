@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>📊 Marks Dashboard</h1>
+                <p class="header-subtitle">Academic Performance Report</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Summary Cards -->
+        <section class="summary-section">
+            <div class="summary-card total-card">
+                <div class="card-icon">📚</div>
+                <div class="card-content">
+                    <p class="card-label">Total Marks</p>
+                    <h3 class="card-value">925</h3>
+                    <p class="card-detail">Out of 1000</p>
+                </div>
+            </div>
+
+            <div class="summary-card average-card">
+                <div class="card-icon">⭐</div>
+                <div class="card-content">
+                    <p class="card-label">Average Score</p>
+                    <h3 class="card-value">92.5</h3>
+                    <p class="card-detail">Excellent Performance</p>
+                </div>
+            </div>
+
+            <div class="summary-card percentage-card">
+                <div class="card-icon">📈</div>
+                <div class="card-content">
+                    <p class="card-label">Overall Percentage</p>
+                    <h3 class="card-value">92.5%</h3>
+                    <p class="card-detail">Grade: A+</p>
+                </div>
+            </div>
+
+            <div class="summary-card subjects-card">
+                <div class="card-icon">📝</div>
+                <div class="card-content">
+                    <p class="card-label">Total Subjects</p>
+                    <h3 class="card-value">10</h3>
+                    <p class="card-detail">All completed</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts-section">
+            <div class="chart-container">
+                <h2>Subject Performance</h2>
+                <div class="performance-chart">
+                    <div class="chart-item">
+                        <div class="chart-bar">
+                            <div class="bar" style="--percentage: 95%;">
+                                <span class="bar-label">Mathematics</span>
+                            </div>
+                            <span class="score">95/100</span>
+                        </div>
+                    </div>
+                    <div class="chart-item">
+                        <div class="chart-bar">
+                            <div class="bar" style="--percentage: 88%;">
+                                <span class="bar-label">English</span>
+                            </div>
+                            <span class="score">88/100</span>
+                        </div>
+                    </div>
+                    <div class="chart-item">
+                        <div class="chart-bar">
+                            <div class="bar" style="--percentage: 92%;">
+                                <span class="bar-label">Science</span>
+                            </div>
+                            <span class="score">92/100</span>
+                        </div>
+                    </div>
+                    <div class="chart-item">
+                        <div class="chart-bar">
+                            <div class="bar" style="--percentage: 90%;">
+                                <span class="bar-label">History</span>
+                            </div>
+                            <span class="score">90/100</span>
+                        </div>
+                    </div>
+                    <div class="chart-item">
+                        <div class="chart-bar">
+                            <div class="bar" style="--percentage: 94%;">
+                                <span class="bar-label">Geography</span>
+                            </div>
+                            <span class="score">94/100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grade-distribution">
+                <h2>Grade Distribution</h2>
+                <div class="grade-bar-container">
+                    <div class="grade-bar-item">
+                        <div class="grade-label">A+</div>
+                        <div class="grade-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                        <span class="grade-count">6/10</span>
+                    </div>
+                    <div class="grade-bar-item">
+                        <div class="grade-label">A</div>
+                        <div class="grade-bar">
+                            <div class="progress" style="width: 30%;"></div>
+                        </div>
+                        <span class="grade-count">3/10</span>
+                    </div>
+                    <div class="grade-bar-item">
+                        <div class="grade-label">B+</div>
+                        <div class="grade-bar">
+                            <div class="progress" style="width: 10%;"></div>
+                        </div>
+                        <span class="grade-count">1/10</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Marks Table -->
+        <section class="marks-section">
+            <div class="section-header">
+                <h2>Detailed Marks Report</h2>
+                <p>Subject-wise breakdown of your academic performance</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="marks-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Subject</th>
+                            <th>Midterm</th>
+                            <th>Final Exam</th>
+                            <th>Assignment</th>
+                            <th>Total</th>
+                            <th>Average</th>
+                            <th>Percentage</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mathematics</td>
+                            <td>45</td>
+                            <td>47</td>
+                            <td>3</td>
+                            <td>95</td>
+                            <td>95</td>
+                            <td>95%</td>
+                            <td><span class="grade-badge a-plus">A+</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>English</td>
+                            <td>40</td>
+                            <td>45</td>
+                            <td>3</td>
+                            <td>88</td>
+                            <td>88</td>
+                            <td>88%</td>
+                            <td><span class="grade-badge a">A</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Science</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>2</td>
+                            <td>92</td>
+                            <td>92</td>
+                            <td>92%</td>
+                            <td><span class="grade-badge a-plus">A+</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>History</td>
+                            <td>42</td>
+                            <td>45</td>
+                            <td>3</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>90%</td>
+                            <td><span class="grade-badge a">A</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Geography</td>
+                            <td>46</td>
+                            <td>46</td>
+                            <td>2</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94%</td>
+                            <td><span class="grade-badge a-plus">A+</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Economics</td>
+                            <td>43</td>
+                            <td>44</td>
+                            <td>2</td>
+                            <td>89</td>
+                            <td>89</td>
+                            <td>89%</td>
+                            <td><span class="grade-badge a">A</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Computer Science</td>
+                            <td>47</td>
+                            <td>48</td>
+                            <td>3</td>
+                            <td>98</td>
+                            <td>98</td>
+                            <td>98%</td>
+                            <td><span class="grade-badge a-plus">A+</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Physics</td>
+                            <td>41</td>
+                            <td>45</td>
+                            <td>3</td>
+                            <td>89</td>
+                            <td>89</td>
+                            <td>89%</td>
+                            <td><span class="grade-badge a">A</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Chemistry</td>
+                            <td>43</td>
+                            <td>44</td>
+                            <td>3</td>
+                            <td>90</td>
+                            <td>90</td>
+                            <td>90%</td>
+                            <td><span class="grade-badge a">A</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Biology</td>
+                            <td>44</td>
+                            <td>45</td>
+                            <td>2</td>
+                            <td>91</td>
+                            <td>91</td>
+                            <td>91%</td>
+                            <td><span class="grade-badge a-plus">A+</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="total-row">
+                            <td colspan="4">TOTAL</td>
+                            <td>29</td>
+                            <td>925</td>
+                            <td>92.5</td>
+                            <td>92.5%</td>
+                            <td><span class="grade-badge a-plus">A+</span></td>
+                            <td><span class="status-badge pass">✓ Pass</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="statistics-section">
+            <h2>Performance Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3>Highest Score</h3>
+                    <p class="stat-value">98%</p>
+                    <p class="stat-subject">Computer Science</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Lowest Score</h3>
+                    <p class="stat-value">88%</p>
+                    <p class="stat-subject">English</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Subjects Passed</h3>
+                    <p class="stat-value">10/10</p>
+                    <p class="stat-subject">100% Pass Rate</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Overall Rank</h3>
+                    <p class="stat-value">1st</p>
+                    <p class="stat-subject">Top Performer</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Marks Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>
